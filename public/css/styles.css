@@ -1,0 +1,50 @@
+body{
+    background-color:rgba(67, 160, 134, 0.342);
+    /* background-image: url(https://iiitl.ac.in/pgdds1/assets/img/about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+.hell {
+    padding-top: 50px;
+    letter-spacing: 1px;
+}
+.navbar {
+    letter-spacing: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size:larger;
+}
+.navbar-brand{
+    font-size: xx-large;
+    /* color: #fff; */
+}
+.navbar a{
+    /* color: #fff; */
+    /* margin: 2px; */
+    padding: 1%;
+}
+.navbar-nav  li a:hover {
+    color: #1abc9c !important;
+}
+
+.footer-padding {
+	padding-bottom: 60px;
+}
+
+.footer {
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #1abc9c;
+}
+
+.footer p {
+	margin-top: 25px;
+	font-size: 12px;
+  color: #fff;
+}

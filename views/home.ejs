@@ -2,9 +2,14 @@
     <h1>HOME</h1>
     <h3>Publish your thoughts, your way</h3>
     <p>This is a platform where you can put thoughts openly and anonymously about anyone in IIITL.</p>
+    <div class="topics">
+    <h1>Topics you might want to discover</h1>
+    </div>
 <% contentObj.forEach(function(A) { %>
-    <h1> <%=A.title%> </h1>
-    <p> <%=A.body.substring(0,100) +"..."%> <a href="/posts/<%=A.title%>">Read more.</a> </p>
+    <div class="box">
+        <h1> <%=A.title%> </h1>
+        <p> <%=A.body.substring(0,100) +"..."%> <a href="/posts/<%=A.id%>">Read more.</a> </p>
+    </div>
 <% }) %>
 
 <%-include("partials/footer")-%>

@@ -1,14 +1,16 @@
 body{
-    background-color:rgba(67, 160, 134, 0.342);
+    background-color:rgba(247, 184, 184, 0.342);
     /* background-image: url(https://iiitl.ac.in/pgdds1/assets/img/about.jpg);
     background-repeat: no-repeat;
     background-size: cover; */
+    letter-spacing: 5px;
 }
 .hell {
     padding-top: 50px;
     letter-spacing: 1px;
 }
 .navbar {
+    /* position: absolute; */
     letter-spacing: 5px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -29,13 +31,40 @@ body{
 .navbar-nav  li a:hover {
     color: #1abc9c !important;
 }
+.box{
+    color: #f9f1f1;
+    background-color:rgba(95, 66, 66, 0.74);
+    margin: 5px;
+    outline:solid 2px white ;
+    padding: 10px;
+
+    border-radius: 5px;
+    /* text-align: center; */
+}
+.topics{
+    text-align: center;
+    letter-spacing: 7px;
+}
+.postTitle{   
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255, 129, 129, 0.886),rgba(255,0,0,0));
+    /* background-color: antiquewhite; */
+    /* width:max-content; */
+}
+.postContent{
+    text-align: center;
+    padding: 10px;
+}
 
 .footer-padding {
 	padding-bottom: 60px;
 }
 
 .footer {
-	position: absolute;
+	position: fixed;
 	text-align: center;
 	bottom: 0;
 	width: 100%;
@@ -48,3 +77,18 @@ body{
 	font-size: 12px;
   color: #fff;
 }
+a{
+    color: #ffffff;
+}
+a:hover{
+    color: #1abc9c;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    body{
+        font-size: larger;
+    }
+    .navbar a{
+        font-size: x-large;
+    }
+  }

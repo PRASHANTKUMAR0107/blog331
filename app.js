@@ -53,15 +53,15 @@ app.get("/posts/:anything",function(req,res){
   //     res.render("post",{content:A})
   //   }
   // })
-  compoCollection.find({title:any},function(err,foundItem){
+  compoCollection.find({_id: any},function(err,foundItem){
     if(!err){
+      // console.log(foundItem);
       if(!foundItem[0])
       {
         res.redirect("/");
       }
       else
       {
-        console.log(foundItem[0]);
         res.render("post",{content:foundItem[0]});
       }
     }
@@ -73,7 +73,7 @@ app.get("/posts/:anything",function(req,res){
 app.post("/compose",function(req,res){
   // console.log(req.body.contentTitle);
   let composeObj=new compoCollection({
-    title:_.capitalize(req.body.contentTitle),
+    title:(req.body.contentTitle),
     body:req.body.contentBody
   });
   composeObj.save();
